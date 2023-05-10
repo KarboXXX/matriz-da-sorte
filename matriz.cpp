@@ -24,9 +24,8 @@ int main() {
     int ii, jj, c, d, b, cc, dd, bb = 0;
     ii = jj = c = d = b = cc = dd = bb;
     
-    for (int i=0; i<=3; i++) {
-      for (int j=0; j<=3; j++) {
-	if (i == 3 || j == 3) break;
+    for (int i=0; i<3; i++) {
+      for (int j=0; j<3; j++) {
 	c = matrix[i][j];
 
 	if (matrix[i][j-1] == c && j > 0) b++;
